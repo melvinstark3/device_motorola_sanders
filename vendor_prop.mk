@@ -394,15 +394,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Touch response
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.qti.inputopts.enable=true \
-    persist.vendor.qti.inputopts.movetouchslop=0.6 \
-    ro.vendor.qti.cgroup_follow.enable=true \
-    ro.qcom.adreno.qgl.ShaderStorageImageExtendedFormats=0
-
-# Higher fling velocities
-# for smoother scrolling and better responsiveness
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.min.fling_velocity=160 \
-    ro.max.fling_velocity=20000
+    persist.vendor.qti.inputopts.movetouchslop=0.6
 
 # USB
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -460,17 +452,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # SurfaceFlinger sensor props
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
-
-# Tweaks for battery saving
-PRODUCT_PROPERTY_OVERRIDES += \
-   pm.sleep_mode=1 \
-   usb_wakeup=enable \
-   proximity_incall=enable \
-   power_supply.wakeup=enable \
-   ro.config.hw_power_saving=1 \
-   ro.config.hw_fast_dormancy=1 \
-   ro.config.hw_quickpoweron=true \
-   persist.sys.use_dithering=0
 
 # Boot
 PRODUCT_PROPERTY_OVERRIDES += \
